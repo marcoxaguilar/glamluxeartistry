@@ -1,0 +1,10 @@
+# Redirect old Squarespace URLs to new pages
+/services-2     /services.html#occasion    301
+/inquire        /contact.html              301
+/about          /about.html                301
+/services       /services.html             301
+/testimonials   /testimonials.html         301
+/faq            /faq.html                  301
+/contact        /contact.html              301
+/portfolio      /portfolio.html            301
+/blog           /blog.html                 301

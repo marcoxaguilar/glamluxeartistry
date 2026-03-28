@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Consultation | Contact Glam Luxe Artistry — Antioch, IL Bridal Makeup</title>
+  <meta name="description" content="Ready to book luxury bridal makeup & hair? Contact Glam Luxe Artistry for a free consultation. Serving Antioch, IL, Lake County & the greater Chicagoland area.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://glamluxeartistry.com/contact.html">
+  <meta property="og:title" content="Book a Consultation | Glam Luxe Artistry">
+  <meta property="og:description" content="Contact us for a free bridal makeup consultation. Antioch, IL & Chicagoland.">
+  <meta property="og:url" content="https://glamluxeartistry.com/contact.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Glam Luxe Artistry</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="nav-cta active">Book a Consultation</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero" style="height: 40vh; min-height: 280px;">
+    <div class="page-hero-bg" style="background-image: url('https://images.squarespace-cdn.com/content/v1/672e9d4dc63b663708be5756/8e3c6d48-5c15-4038-80b2-5c4d0fef841a/DSC02067.jpg')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Let's Create Your Dream Look</h1>
+      <p>Fill out the form below and we'll be in touch within 24–48 hours</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <p class="section-eyebrow">Inquire</p>
+          <h2 class="section-title">Book Your Consultation</h2>
+          <p class="section-body" style="max-width:none; margin-bottom: 2rem;">We'd love to hear about your event! Fill out the form with as much detail as possible and we'll get back to you within 24–48 hours. For the fastest response, include your event date, location, and number of people needing services.</p>
+
+          <!-- Netlify Forms: the data-netlify="true" attribute tells Netlify to process this form -->
+          <form name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+            <!-- Honeypot field for spam bots — hidden from real users -->
+            <p style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option value="Bridal Makeup Only">Bridal Makeup Only</option>
+                <option value="Bridal Makeup & Hair">Bridal Makeup &amp; Hair</option>
+                <option value="Full Bridal Experience">Full Bridal Experience</option>
+                <option value="Bridal Party Services">Bridal Party Services</option>
+                <option value="Special Occasion Glam">Special Occasion Glam</option>
+                <option value="Glam Lesson">Glam Lesson</option>
+                <option value="Other">Other / Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Event Date</label>
+              <input type="date" id="date" name="event_date">
+            </div>
+            <div class="form-group">
+              <label for="venue">Venue / Location</label>
+              <input type="text" id="venue" name="venue" placeholder="Venue name or city">
+            </div>
+            <div class="form-group">
+              <label for="party-size">Number of People Needing Services</label>
+              <input type="number" id="party-size" name="party_size" min="1" max="30" placeholder="e.g. 6">
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Vision *</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your event, the look you're envisioning, any special requests..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="referral">How Did You Hear About Us?</label>
+              <select id="referral" name="referral">
+                <option value="">Select...</option>
+                <option value="Google Search">Google Search</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="The Knot">The Knot</option>
+                <option value="WeddingWire">WeddingWire</option>
+                <option value="Friend / Referral">Friend / Referral</option>
+                <option value="Venue Recommendation">Venue Recommendation</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 0.5rem;">Send Inquiry</button>
+          </form>
+        </div>
+
+        <div>
+          <div style="background: var(--color-warm-white); border: 1px solid var(--color-border); padding: 2rem; margin-bottom: 2rem;">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--color-charcoal); margin-bottom: 1rem;">Contact Info</h3>
+            <p style="margin-bottom: 0.75rem; font-size: 0.95rem;"><strong>Email:</strong> <a href="mailto:hello@glamluxeartistry.com" style="color: var(--color-gold-dark);">hello@glamluxeartistry.com</a></p>
+            <p style="margin-bottom: 0.75rem; font-size: 0.95rem;"><strong>Based in:</strong> Antioch, IL</p>
+            <p style="margin-bottom: 0.75rem; font-size: 0.95rem;"><strong>Service Area:</strong> Lake County, McHenry County &amp; greater Chicagoland</p>
+            <p style="font-size: 0.95rem;"><strong>Response Time:</strong> Within 24–48 hours</p>
+          </div>
+
+          <div style="background: var(--color-warm-white); border: 1px solid var(--color-border); padding: 2rem; margin-bottom: 2rem;">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--color-charcoal); margin-bottom: 1rem;">Follow Us</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 1rem; color: var(--color-text-light);">Stay up to date with our latest looks and behind-the-scenes moments.</p>
+            <div style="display: flex; gap: 1rem;">
+              <a href="https://www.facebook.com/GlamLuxeArtistry/" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.78rem; padding: 0.6rem 1.2rem;">Facebook</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.78rem; padding: 0.6rem 1.2rem;">Instagram</a>
+            </div>
+          </div>
+
+          <div style="background: var(--color-warm-white); border: 1px solid var(--color-border); padding: 2rem;">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--color-charcoal); margin-bottom: 1rem;">Quick Links</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;"><a href="services.html" style="color: var(--color-gold-dark); text-decoration: underline;">View Packages &amp; Pricing</a></p>
+            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;"><a href="faq.html" style="color: var(--color-gold-dark); text-decoration: underline;">Read our FAQ</a></p>
+            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;"><a href="portfolio.html" style="color: var(--color-gold-dark); text-decoration: underline;">Browse our Portfolio</a></p>
+            <p style="font-size: 0.95rem;"><a href="testimonials.html" style="color: var(--color-gold-dark); text-decoration: underline;">Read Reviews</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><h3 class="footer-logo">Glam Luxe Artistry</h3><p>Luxury on-location bridal makeup &amp; hair. Serving Antioch, IL, Lake County &amp; Chicagoland.</p></div>
+        <div class="footer-nav"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-contact"><h4>Get in Touch</h4><p><a href="mailto:hello@glamluxeartistry.com">hello@glamluxeartistry.com</a></p><p>Antioch, IL</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Glam Luxe Artistry LLC. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
