@@ -3,61 +3,21 @@
 
 [build]
   command = "echo 'Static site deployed'"
-  publish = "/"
+  publish = "."
 
-# Redirect old Squarespace paths to new pages
-# force = false means these only fire if the old path doesn't match a real file
+# Pretty URLs: Netlify automatically serves about.html at /about
+# This is enabled by default on Netlify
+
+# Redirect old Squarespace paths
 [[redirects]]
   from = "/services-2"
-  to = "/services.html#occasion"
+  to = "/services#occasion"
   status = 301
   force = false
 
 [[redirects]]
   from = "/inquire"
-  to = "/contact.html"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/about"
-  to = "/about.html"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/services"
-  to = "/services.html"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/testimonials"
-  to = "/testimonials.html"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/faq"
-  to = "/faq.html"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact.html"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/portfolio"
-  to = "/portfolio.html"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/blog"
-  to = "/blog.html"
+  to = "/contact"
   status = 301
   force = false
 
